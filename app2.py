@@ -183,7 +183,6 @@ if submit:
     df = engineer_features(df)
     df = add_fourier_terms(df)
     df.dropna(inplace=True)
-    running = st.session_state.get("running", False)
 
 
     with st.spinner('Forecast Generating Stock Prices for the next Decade, this will take a little over 5 minutes.'):
