@@ -15,11 +15,32 @@ import joblib
 
 from forecasters import forecast as main_forecast
 #Interactive User Interface Elements
+
+
+
 st.set_page_config(initial_sidebar_state="expanded")
 st.title('Stock Forecasting Project - Eduard Klyuchinskiy')
+
 st.sidebar.title('Choose Your Fund')
 funds = st.sidebar.selectbox('fund',['S&P 500', 'DOW JONES', 'NASDAQ'])
-submit = st.sidebar.button('submit')
+
+submit = False
+
+if 'forecasting' not in st.session_state:
+    st.session_state.forecasting = False
+
+
+if 'clicked' not in st.session_state:
+    st.session_state.clicked = False
+
+if st.session_state.forecasting == False and st.session_state.clicked == False:
+    if st.sidebar.button('submit'):
+        st.session_state.clicked = True
+        st.session_state.forecasting = True
+        st.rerun()
+elif st.session_state.forecasting:
+    st.sidebar.write('forecast is running')
+
 st.header(f'Your chosen fund: {funds}')
 
 #Define Time Series variables that will be used in our DF generation
@@ -178,11 +199,15 @@ This means that the predictions of the model were off by {MAPE_mainsum}%
 
 
 if submit:
-    submit = st.write('function running')
+    st.session_state.forecasting = True
+    st.rerun()
+
+if st.session_state.forecasting == True:
     df = gen_df(past_20, yesterday,ticker)
     df = engineer_features(df)
     df = add_fourier_terms(df)
     df.dropna(inplace=True)
+
 
 
     with st.spinner('Forecast Generating Stock Prices for the next Decade, this will take a little over 5 minutes.'):
@@ -222,3 +247,5 @@ if submit:
     years = len(forecast_df)/365
     CAGR = round(((last_price / initial_price) **(1 / years) - 1 )*100)
     st.write(f'Your inital Price was {initial_price}, the last price was {last_price} that gives you a Compound Annual Growth Rate of {CAGR}%')
+    st.session_state.forecasting= False
+    st.session_state.clicked = False
