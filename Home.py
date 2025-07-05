@@ -56,7 +56,7 @@ In order to do so, my idea was to create a project that forecasts the price of i
 a CAGR (Compound Annual Growth Rate). What sets aside my forecasting project from many other ones you'll see online is that the other forecasters online
 act more like a calculator where you plug in a number, a percentage rate, and it will give you a return in the end, my project
 used a Deep Learning model called 'Long Short Term Memory' to train over 20 years of stock data. It will predict a new price for an index fund every day
-for the next 10 years and as a result, will produce it's own CAGR utilizing the historical data it was trained on.
+for the next 10 years and as a result, will produce its own CAGR utilizing the historical data it was trained on.
 With this in mind, the Long Short Term 
 Memory by its design gives a larger weight to more recent data, which is why I picked this model so that in my forecast the model can 
 pick up where it left off training, as a forecaster making predictions. 
