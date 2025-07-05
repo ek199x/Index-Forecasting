@@ -53,7 +53,7 @@ to find myself a potential career that I can thrive in.
 
 I wanted to make a project that would encourage people to invest into the economy over a long term period of time (like 10 years)
 In order to do so, my idea was to create a project that forecasts the price of index funds 10 years int othe future and return
-a CAGR (Compound Annual Growth Rate). What sets aside my forecasting project from many other ones you'll see online is that the forecasters online
+a CAGR (Compound Annual Growth Rate). What sets aside my forecasting project from many other ones you'll see online is that the other forecasters online
 act more like a calculator where you plug in a number, a percentage rate, and it will give you a return in the end, my project
 used a Deep Learning model called 'Long Short Term Memory' to train over 20 years of stock data. With this in mind, the Long Short Term 
 Memory by its design gives a larger weight to more recent data, which is why I picked this model so that in my forecast the model can 
