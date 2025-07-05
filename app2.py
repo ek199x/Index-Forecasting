@@ -182,7 +182,15 @@ if submit:
     df = engineer_features(df)
     df = add_fourier_terms(df)
     df.dropna(inplace=True)
-   
+
+    running = st.session_state.get("running", False)
+
+    if not running:
+        with st.sidebar:
+            st.header("Sidebar")
+            st.button("Start Task", on_click=lambda: st.session_state.update(running=True))
+    else:
+        st.sidebar.empty()  
 
 
 
