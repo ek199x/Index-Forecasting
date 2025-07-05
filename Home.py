@@ -113,7 +113,7 @@ standard deviation - **{DJIstd}**
 
 )
 
-col3.header('DOW JONES')
+col3.header('NASDAQ')
 col3.markdown('### Summary Statistics')
 col3.markdown(
 f'''
