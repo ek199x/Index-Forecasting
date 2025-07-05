@@ -132,4 +132,4 @@ standard deviation - **{IXstd}**
 
 )
 
-st.write("From these summary statistics and our boxplot it's easy to see that there is a right skew amongst our data, with our medians being much further down than our max, and all 3 plots having relatively long tails in comparison to their boxes. This can be explained by the recent bullish behaviors of the stocks both post-COVID and post 2008 recession. ")
+st.write("From these summary statistics and our boxplot it's easy to see that there is a right skew amongst our data, because our medians being much further down than our max, and all 3 plots having relatively long tails in comparison to their boxes. This can be explained by the recent bullish behaviors of the market post covid which created prices that trend much higher than the majority of the data beforehand.")
