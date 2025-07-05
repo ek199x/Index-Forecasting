@@ -178,21 +178,12 @@ This means that the predictions of the model were off by {MAPE_mainsum}%
 
 
 if submit:
-    st.sidebar.empty()
+    submit.empty()
     df = gen_df(past_20, yesterday,ticker)
     df = engineer_features(df)
     df = add_fourier_terms(df)
     df.dropna(inplace=True)
-
     running = st.session_state.get("running", False)
-
-    if not running:
-        with st.sidebar:
-            st.header("Sidebar")
-            st.button("Start Task", on_click=lambda: st.session_state.update(running=True))
-    else:
-        st.sidebar.empty()  
-
 
 
     with st.spinner('Forecast Generating Stock Prices for the next Decade, this will take a little over 5 minutes.'):
