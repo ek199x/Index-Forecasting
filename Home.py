@@ -34,10 +34,10 @@ My name is Eduard Klyuchinskiy and this is my Capstone Project for my Data Scien
 
 ## About Me
 
-    Currently I am in my final semester of my Masters program and am thoroughly enjoying learning all about data science. Especially
-the machine learning portion of the course. Throughout my time in the program I've learned so much about both the math side and
-programming side of software, to the point where I think I have a solid understanding of how many websites and programs work,
-at least a little bit, behind the scenes. 
+    Currently I am in my final semester of my Masters program and am thoroughly enjoying learning all about data science. 
+Especially the machine learning portion of the course. Throughout my time in the program I've learned so much about
+both the math side and programming side of software, to the point where I think I have a solid understanding of how 
+many websites and programs work,at least a little bit, behind the scenes. 
     My job in the U.S. Air Force is also very much related to data such as cleaning it,
 processing it, and extracting insights out of it, so I've taken a lot of what I've learned from this course and have been able to
 apply it to my job. For example, I was able to build a SQL database using microsoft access and link that database to PowerBI
