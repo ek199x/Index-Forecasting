@@ -50,7 +50,7 @@ running, and traveling. I'm originally from New York and I intend to go back aft
 I'm hoping that during my transition I'll be able to utilize projects such as this as well as my resume and skills I've developed
 to find myself a potential career that I can thrive in.
 
-## About the Project
+## About the Stock Price Forecasting Project
 
 I wanted to make a project that would encourage people to invest into the economy over a long term period of time (like 10 years)
 In order to do so, my idea was to create a project that forecasts the price of index funds 10 years int othe future and return
