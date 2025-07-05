@@ -35,6 +35,7 @@ Hello Everyone, my name is Eduard Klyuchinskiy and this is my attempt at creatin
 In the sidebar you can find links to my resume and any projects I feel comfortable sharing with you. 
 
 ## About Me
+
 Currently I am in my final semester of my Masters program and am thoroughly enjoying learning all about data science. 
 Especially the machine learning portion of the course. Throughout my time in the program I've learned so much about
 both the math side and programming side of software, to the point where I think I have a solid understanding of how 
