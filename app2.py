@@ -39,7 +39,7 @@ if st.session_state.forecasting == False and st.session_state.clicked == False:
         st.session_state.forecasting = True
         st.rerun()
 elif st.session_state.forecasting:
-    st.sidebar.write('forecast is running')
+    st.sidebar.write('Forecast is running please wait and refrain from changing fund.')
 
 st.header(f'Your chosen fund: {funds}')
 
@@ -243,9 +243,19 @@ if st.session_state.forecasting == True:
     ax.fill_between(forecast_df.index, forecast_df['Close_Pred'], color = 'black')
 
     st.pyplot(fig)
-    
+
     years = len(forecast_df)/365
     CAGR = round(((last_price / initial_price) **(1 / years) - 1 )*100)
     st.write(f'Your inital Price was {initial_price}, the last price was {last_price} that gives you a Compound Annual Growth Rate of {CAGR}%')
     st.session_state.forecasting= False
     st.session_state.clicked = False
+
+    st.download_button(
+        label = 'Download your forecast as CSV',
+        data = forecast_df.to_csv(index=True),
+        file_name='forecast.csv'
+    )
+
+    if st.button('forecast another fund'):
+    
+        st.rerun()
