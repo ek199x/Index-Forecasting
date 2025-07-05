@@ -120,7 +120,7 @@ def forecast(df, model, xscaler, yscaler,xscale):
             'SMA_200':SMA_200,
             'SMA_500':SMA_500,
         }
-
+        st.sidebar.empty()
         progress = i/forecast_days
         progress_bar.progress(progress)
 
