@@ -15,6 +15,7 @@ import joblib
 
 from forecasters import forecast as main_forecast
 #Interactive User Interface Elements
+st.set_page_config(initial_sidebar_state="expanded")
 st.title('Stock Forecasting Project - Eduard Klyuchinskiy')
 st.sidebar.title('Choose Your Fund')
 funds = st.sidebar.selectbox('fund',['S&P 500', 'DOW JONES', 'NASDAQ'])
