@@ -178,7 +178,7 @@ This means that the predictions of the model were off by {MAPE_mainsum}%
 
 
 if submit:
-    submit.empty()
+    submit = st.write('function running')
     df = gen_df(past_20, yesterday,ticker)
     df = engineer_features(df)
     df = add_fourier_terms(df)
