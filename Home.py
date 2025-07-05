@@ -32,7 +32,7 @@ st.markdown(
 '''
 My name is Eduard Klyuchinskiy and this is my Capstone Project for my Data Science Masters Program at Eastern University.
 
-##About Me
+## About Me
 
     Currently I am in my final semester of my Masters program and am thoroughly enjoying learning all about data science. Especially
 the machine learning portion of the course. Throughout my time in the program I've learned so much about both the math side and
