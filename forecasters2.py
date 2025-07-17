@@ -49,6 +49,7 @@ def forecast(df, model, xscaler, yscaler,xscale):
 
     progress_bar = st.progress(0)
 
+    plot_placeholder = st.empty()
     #create a daily trend variable to add a trend to the data 
 
     for i in range(forecast_days):
@@ -141,14 +142,45 @@ def forecast(df, model, xscaler, yscaler,xscale):
         new_vals_df = pd.DataFrame([new_row], columns=forecast_features)
         new_scaled = xscaler.transform(new_vals_df)
 
+        if len(pred_price) > 1 and i % 5 == 0:  # update every 5 steps for smoother visuals
+            forecast_df = pd.DataFrame({
+                'Date': future_dates,
+                'Log_Close_Pred': pred_log,
+                'Close_Pred': pred_price
+            }).set_index('Date')
+
+            fig, ax = plt.subplots()
+            fig.patch.set_facecolor("#191729")
+            ax.set_facecolor('#191728')
+            ax.plot(forecast_df['Close_Pred'], color='white')
+            ax.set_xlabel('Time in Years', color='green', fontweight='bold')
+            ax.set_ylabel('Price in $', color='green', fontweight='bold')
+            ax.tick_params(axis='x', colors='green')
+            ax.tick_params(axis='y', colors='green')
+
+            initial_price = round(forecast_df['Close_Pred'].iloc[0], 2)
+            last_price = round(forecast_df['Close_Pred'].iloc[-1], 2)
+            ax.annotate(f'${initial_price} Initial Price',
+                        xy=(forecast_df.index[0], initial_price),
+                        xytext=(forecast_df.index[0], initial_price * 1.25),
+                        arrowprops=dict(arrowstyle='simple'),
+                        fontsize=10,
+                        color='green',
+                        fontweight='bold')
+            ax.annotate(f'${last_price} Last Price',
+                        xy=(forecast_df.index[-1], last_price),
+                        xytext=(forecast_df.index[-1], last_price - last_price * 0.25),
+                        arrowprops=dict(arrowstyle='simple'),
+                        fontsize=10,
+                        color='red',
+                        fontweight='bold')
+            ax.fill_between(forecast_df.index, forecast_df['Close_Pred'], color='black')
+
+            plot_placeholder.pyplot(fig)
+
         #  Update window
         feature_hist = np.vstack([feature_hist, new_scaled])[-window:]
     progress_bar.empty()
-    forecast_df = pd.DataFrame({
-        'Date':future_dates,
-        'Log_Close_Pred': pred_log,
-        'Close_Pred': pred_price
-    }).set_index('Date')
 
     
     return forecast_df, pred_price
