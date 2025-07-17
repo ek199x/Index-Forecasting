@@ -13,7 +13,7 @@ import datetime
 import pandas as pd
 import joblib
 
-from forecasters import forecast as main_forecast
+from forecasters2 import forecast as main_forecast
 #Interactive User Interface Elements
 
 
@@ -212,38 +212,10 @@ if st.session_state.forecasting == True:
 
     with st.spinner('Forecast Generating Stock Prices for the next Decade, this will take a little over 5 minutes.'):
       forecast_df,pred_price = main_forecast(df, main, xscaler, yscaler, xscale)
-      #forecast_df,pred_price = forecast_func(df, selected_scenario, xscaler, yscaler, xscale)
+      #forecast_df,pred_price = forecast_func(df, selected_scenario, xscaler, yscaler, xscale)r
 
-   
-    st.header('Decade Forecast')
-    fig, ax = plt.subplots()
-    fig.patch.set_facecolor("#191729")
-    ax.set_facecolor('#191728')
-    ax.plot(forecast_df['Close_Pred'], color = 'white')
-    ax.set_xlabel('Time in Years', color = 'green', fontweight = 'bold')
-    ax.set_ylabel('Price in $', color = 'green', fontweight = 'bold')
-    ax.tick_params(axis='x',colors = 'green')
-    ax.tick_params(axis='y',colors = 'green')
-    initial_price = round(forecast_df['Close_Pred'].iloc[0],2)
-    last_price = round(forecast_df['Close_Pred'].iloc[-1],2)
-    ax.annotate(f'${initial_price} Initial Price',
-            xy=(forecast_df.index[0] , initial_price),
-            xytext=(forecast_df.index[0], initial_price *1.25),
-            arrowprops=dict(arrowstyle='simple'),
-            fontsize=10,
-            color = 'green',
-            fontweight = 'bold')
-    ax.annotate(f'${last_price} last price',
-            xy=(forecast_df.index[-1],last_price),
-            xytext = (forecast_df.index[-1],last_price - (last_price*.25)),
-            arrowprops=dict(arrowstyle='simple'),
-            fontsize = 10,
-            color = 'red',
-            fontweight = 'bold')
-    ax.fill_between(forecast_df.index, forecast_df['Close_Pred'], color = 'black')
-
-    st.pyplot(fig)
-
+    initial_price = forecast_df['Close_Pred'].iloc[0]
+    last_price = forecast_df['Close_Pred'].iloc[-1]
     years = len(forecast_df)/365
     CAGR = round(((last_price / initial_price) **(1 / years) - 1 )*100)
     st.write(f'Your inital Price was {initial_price}, the last price was {last_price} that gives you a Compound Annual Growth Rate of {CAGR}%')
