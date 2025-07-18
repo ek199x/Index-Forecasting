@@ -4,7 +4,7 @@ import joblib
 
 st.set_page_config(initial_sidebar_state="expanded")
 st.set_page_config(page_title = 'Home')
-st.title('Welcome To My Stock Forecasting Project')
+st.title('Welcome To My Portfolio')
 
 SPSummary= joblib.load('SPSummary.pkl')
 IXICSummary = joblib.load('IXICSummary.pkl')
@@ -33,19 +33,25 @@ st.markdown(
 '''
 
 Hello Everyone, my name is Eduard Klyuchinskiy and this is my attempt at creating a public show case for my projects.
+Currently, the only project I feel comfortable sharing is my stock forecasting project that I began developing for
+my data science Master's degree capstone. I am currently still working on this project, and I will continue to update
+it as time progresses. 
 In the sidebar you can find links to my resume and any projects I feel comfortable sharing with you. 
 
 ## About Me
 
-Currently I am in my final semester of my Masters program and am thoroughly enjoying learning all about data science. 
-Especially the machine learning portion of the course. Throughout my time in the program I've learned so much about
-both the math side and programming side of software, to the point where I think I have a solid understanding of how 
-many websites and programs work,at least a little bit, behind the scenes. 
+I have completed my final semester of my Master's program and have thoroughly enjoying learning all about data science,
+especially the machine learning portion of the course. Throughout my time in the program I've learned so much about
+both the math side of data science and programming side of data science, to the point where I think I have a solid understanding of how 
+websites and programs work behind the scenes. 
 
-My job in the U.S. Air Force is also very much related to data such as cleaning it,
-processing it, and extracting insights out of it, so I've taken a lot of what I've learned from this course and have been able to
+My job in the U.S. Air Force is also very much related to data. In the Air Force I act more as a data analyst, and conduct actions most people would expect a data analyst do with data sets
+such as cleaning it, processing it, and extracting insights out of it. I've taken a lot of what I've learned from my Master's and have been able to
 apply it to my job. For example, I was able to build a SQL database using microsoft access and link that database to PowerBI
 and sharepoint in order to streamline a lot of the manual processes that existed in my workplace beforehand. 
+Additionally, I also have a Bachelor's in Management Information Systems, this initial education milestone propelled my desire to learn more about what makes computers and software work.
+I take what I learned about the strategic and tactical methodologies related to managing information systems and apply them to my work ethic as well as what you may see in the projects that
+are in the sidebar.
 
 In my freetime(the little of it that I have) I am a huge videogame nerd, but who isn't these days? I also love going on hikes
 running, and traveling. I'm originally from New York and I intend to go back after completing my service with the military. 
