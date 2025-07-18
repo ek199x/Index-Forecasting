@@ -9,24 +9,6 @@ st.image('Me.jpeg', width=400)
 st.title('My Resume')
 st.markdown('#### DATA SCIENCE | DATABASE DEVELOPMENT | DATA ANALYTICS')
 st.write('Data Professional & Air Force Veteran, leveraging over 5 years of proven experience specializing in database development, systems administration, and secure communications. Proven ability to design, implement, and optimize SQL databases and automate workflows using Power Automate & PowerShell scripts, ability to build custom tools to support operational readiness and data-driven decision-making. Experienced in managing satellite communications networks and leading cross-functional teams in high-pressure environments. Adept at using software, programming languages, and scripting languages to develop dashboards, streamline reporting, and automate data integration. Career supported by the completion of a Master’s in Data Science. Create efficient processes to extract only actionable data! ')
-st.markdown('''## Education | Certifications:''')
-
-with st.expander('Masters of Science'):
-    st.markdown('Data Science | Eastern University | Expected 2025')
-with st.expander('Bachelors of Science'):
-    st.markdown('Management Information Systems | University of Marlyand | 2023')
-with st.expander('Associate of Science'):
-    st.markdown('Electronic Systems Technology | Community College of the Air Force | 2021')
-with st.expander('ITIL'):
-    st.markdown('ITIL v4 Foundation | PeopleCert | 2025')
-with st.expander('IATAM'):
-    st.markdown('Certified Software Asset Manager | IAITAM | 2025')
-with st.expander('Specialized Military Training '):
-    st.markdown('''
-                - Basic Leadership & Development  
-                - Airman Leadership School 
-                - Modernization of Enterprise Terminals Sustainment Course
-                ''')
 
 st.markdown('''
 ## Professional Experience:
@@ -96,6 +78,25 @@ with st.expander('Lead Airline Security Supervisor'):
 - Improved reporting accuracy by implementing a digital tracking system for incidents and patrol logs; assisted in the coordination of emergency response drills and real-world incidents
 
 ''')
+
+st.markdown('''## Education | Certifications:''')
+
+with st.expander('Masters of Science'):
+    st.markdown('Data Science | Eastern University | Expected 2025')
+with st.expander('Bachelors of Science'):
+    st.markdown('Management Information Systems | University of Marlyand | 2023')
+with st.expander('Associate of Science'):
+    st.markdown('Electronic Systems Technology | Community College of the Air Force | 2021')
+with st.expander('ITIL'):
+    st.markdown('ITIL v4 Foundation | PeopleCert | 2025')
+with st.expander('IATAM'):
+    st.markdown('Certified Software Asset Manager | IAITAM | 2025')
+with st.expander('Specialized Military Training '):
+    st.markdown('''
+                - Basic Leadership & Development  
+                - Airman Leadership School 
+                - Modernization of Enterprise Terminals Sustainment Course
+                ''')
 
 st.markdown('### Technical Competencies')
 with st.expander('Data Analysis & Programming'):
