@@ -36,13 +36,15 @@ with st.expander('Realtime Data Operations Manager - Satellite Communications Se
 
                 ''')
    
-with st.expander('IT Asset Manager/Interim Spectrum Manager'):
+with st.expander('IT Asset Manager & LMR Technician'):
     st.markdown('''
-- Developed and maintained a frequency management database, increasing record accuracy by 25%; oversaw 500+ radio frequency devices, ensuring compliance with federal communication standards
-- Conducted spectrum usage audits and regulatory reviews to maintain mission readiness; automated IT service request workflows halving the average response time
-- Tracked and managed communications equipment inventory, reducing asset loss by 15%; led procurement efforts for new communications systems, aligning with mission requirements
-- Provided technical guidance on radio frequency usage to units across the base; reduced radio frequency interference by 10% through proactive monitoring and coordination
-- Developed compliance documentation for audits and inspections; served as acting Spectrum Manager during staffing gaps, maintaining uninterrupted operations
+- Tracked and managed communications equipment inventory, reducing asset loss by 15% and led procurement efforts for new communications systems, aligning with the unique mission requirements of each agency present on base; conducted an inventory of 600 tactical radios supporting a $2.2M security upgrade initiative
+- Developed and maintained a frequency management database, increasing record accuracy by 25% for 500+ radio frequency devices in use by first responders and operational agencies, ensuring compliance with federal communication standards 
+- Provided technical guidance and trainings on radio frequency usage to base agencies, reducing radio frequency interference by 10% through education and proactive monitoring with spectrum analysis devices
+- Maintained and repaired over 1K land mobile radio systems, achieving a 24-hour average resolution time; conducted preventative maintenance on 50+ transmission systems, reducing downtime by 95%
+- Supported emergency deployments by setting up mobile communications platforms, boosting effectiveness by 50%; upgraded 500+ radios with secure encryption to enhance operational security
+- Directed restoration of communications during IT outages affecting 14K personnel; created training materials for helicopter aircrews, improving readiness for over 700 missions
+
                 ''')
     
 with st.expander('Emergency Action Controller'):
