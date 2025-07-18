@@ -87,15 +87,15 @@ col1.markdown(
 f'''
 In the past twenty years the S&P 500 had these summary stats: 
 
-minimum -**{SPmin}** 
+minimum : **{SPmin}** 
 
-maximum - **{SPmax}** 
+maximum : **{SPmax}** 
 
-median - **{SPmed}**
+median : **{SPmed}**
 
-mean - **{SPmean}**
+mean : **{SPmean}**
 
-standard deviation - **{SPstd}** 
+standard deviation : **{SPstd}** 
 '''
 
 )
@@ -107,15 +107,15 @@ col2.markdown(
 f'''
 In the past twenty years the DOW JONES INDUSTRIAL had these summary stats: 
 
-minimum -**{DJImin}** 
+minimum : **{DJImin}** 
 
-maximum - **{DJImax}** 
+maximum : **{DJImax}** 
 
-median - **{DJImed}**
+median : **{DJImed}**
 
-mean - **{DJImean}**
+mean : **{DJImean}**
 
-standard deviation - **{DJIstd}** 
+standard deviation : **{DJIstd}** 
 '''
 
 )
@@ -126,15 +126,15 @@ col3.markdown(
 f'''
 In the past twenty years the NASDAQ had these summary stats: 
 
-minimum -**{IXmin}** 
+minimum : **{IXmin}** 
 
-maximum - **{IXmax}** 
+maximum : **{IXmax}** 
 
-median - **{IXmed}**
+median : **{IXmed}**
 
-mean - **{IXmean}**
+mean : **{IXmean}**
 
-standard deviation - **{IXstd}** 
+standard deviation : **{IXstd}** 
 '''
 
 )
