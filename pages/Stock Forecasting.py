@@ -220,7 +220,13 @@ if st.session_state.forecasting == True:
     last_price = round(forecast_df['Close_Pred'].iloc[-1],2)
     years = len(forecast_df)/365
     CAGR = round(((last_price / initial_price) **(1 / years) - 1 )*100)
-    st.write(f'Your inital Price was {initial_price}, the last price was {last_price} that gives you a Compound Annual Growth Rate of {CAGR}%')
+    st.markdown(f"""
+    - **inital Price** : ${initial_price} 
+    - **last price was** : ${last_price} 
+    - **Compound Annual Growth Rate** : ${CAGR}%
+    
+    
+    """)
     st.session_state.forecasting= False
     st.session_state.clicked = False
 
