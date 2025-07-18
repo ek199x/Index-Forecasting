@@ -35,7 +35,7 @@ if 'clicked' not in st.session_state:
     st.session_state.clicked = False
 
 if st.session_state.forecasting == False and st.session_state.clicked == False:
-    if st.sidebar.button('submit'):
+    if st.sidebar.button('Forecast'):
         st.session_state.clicked = True
         st.session_state.forecasting = True
         st.rerun()
