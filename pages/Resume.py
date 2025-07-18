@@ -99,7 +99,7 @@ with st.expander('Associate of Science'):
     st.markdown('Electronic Systems Technology | Community College of the Air Force | 2021')
 with st.expander('ITIL'):
     st.markdown('ITIL v4 Foundation | PeopleCert | 2025')
-with st.expander('IATAM'):
+with st.expander('IAITAM'):
     st.markdown('Certified Software Asset Manager | IAITAM | 2025')
 with st.expander('Service Now'):
     st.markdown('Certified System Administrator | Service Now | 2025')
