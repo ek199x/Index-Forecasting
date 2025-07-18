@@ -90,11 +90,3 @@ with st.expander('Specialized Military Training '):
                 - Airman Leadership School 
                 - Modernization of Enterprise Terminals Sustainment Course
                 ''')
-
-st.markdown('### Technical Competencies')
-with st.expander('Data Analysis & Programming'):
-    st.markdown('Python | SQL | R | Tableau | Power BI | Excel')
-with st.expander('IT & Networking'):
-    st.markdown('Network configuration & troubleshooting | Systems Maintenance | Radio Frequency Communications')
-with st.expander ('Project Management'):
-    st.markdown('Agile methodologies | Database Management | Process Automation')
