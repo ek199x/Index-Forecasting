@@ -82,6 +82,8 @@ with st.expander('ITIL'):
     st.markdown('ITIL v4 Foundation | PeopleCert | 2025')
 with st.expander('IATAM'):
     st.markdown('Certified Software Asset Manager | IAITAM | 2025')
+with st.expander('Service Now'):
+    st.markdown('Certified System Administrator | Service Now | 2025')
 with st.expander('Specialized Military Training '):
     st.markdown('''
                 - Basic Leadership & Development  
