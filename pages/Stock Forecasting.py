@@ -186,7 +186,7 @@ st.markdown('#### Recent Data Model')
 st.write(funds)
 st.pyplot(mainfig)
 st.markdown(f"""
-The Recent Data Model is a Long Short Term Memory model trained on stock data spanning
+The Recent Data Model is a Long Short Term Memory (LSTM) deep-learning model trained on stock data spanning
 the past 20 years up to the last logged day with a close price for the stock from the day of model training.
     
 **\\${RMSE_mainsum:.2f}** was the root mean squared error in the recent data model,  
