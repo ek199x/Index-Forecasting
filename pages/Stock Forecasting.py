@@ -19,7 +19,8 @@ from forecasters2 import forecast as main_forecast
 
 
 st.set_page_config(initial_sidebar_state="expanded")
-st.title('Stock Forecasting Project - Eduard Klyuchinskiy')
+st.title('Stock Forecasting Project With LSTM')
+st.header('Take a look at the information below, and then press to forecast button in the sidebar to begin a 10 year forecast for your selected fund')
 
 st.sidebar.title('Choose Your Fund')
 funds = st.sidebar.selectbox('',['S&P 500', 'DOW JONES', 'NASDAQ'])
