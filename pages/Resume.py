@@ -7,7 +7,7 @@ st.image('Me.jpeg', width=400)
 
 
 st.title('My Resume')
-st.markdown('#### DATA SCIENCE| DATABASE DEVELOPMENT| DATA ANALYTICS')
+st.markdown('#### DATA SCIENCE | DATABASE DEVELOPMENT | DATA ANALYTICS')
 st.write('Data Professional & Air Force Veteran, leveraging over 5 years of proven experience specializing in database development, systems administration, and secure communications. Proven ability to design, implement, and optimize SQL databases and automate workflows using Power Automate & PowerShell scripts, ability to build custom tools to support operational readiness and data-driven decision-making. Experienced in managing satellite communications networks and leading cross-functional teams in high-pressure environments. Adept at using software, programming languages, and scripting languages to develop dashboards, streamline reporting, and automate data integration. Career supported by the completion of a Master’s in Data Science. Create efficient processes to extract only actionable data! ')
 st.markdown('''## Education | Certifications:''')
 
