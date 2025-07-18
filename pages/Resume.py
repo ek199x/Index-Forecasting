@@ -58,17 +58,6 @@ with st.expander('Emergency Action Controller'):
 '''
     )
 
-with st.expander('Radio Frequency Transmission Systems Technician'):
-    st.markdown(
-        '''
-- Maintained and repaired over 1K land mobile radio systems, achieving a 24-hour average resolution time; conducted preventative maintenance on 50+ transmission systems, reducing downtime by 95%
-- Supported emergency deployments by setting up mobile communications platforms, boosting effectiveness by 50%; upgraded 500+ radios with secure encryption to enhance operational security
-- Managed the frequency allocation program for 25 tenant units and over 15K records; conducted an inventory of 600 tactical radios supporting a $2.2M security upgrade initiative
-- Directed restoration of communications during IT outages affecting 14K personnel; created training materials for helicopter aircrews, improving readiness for over 700 missions
-- Coordinated audio-visual support for ceremonies and official events at the Wing level; streamlined the service request process, reducing technician workload and improving service delivery by 60%
-
-'''
-    )
 
 
 st.markdown('#### Allied Universal | New York, NY | 2018 – 2020')
@@ -79,8 +68,6 @@ with st.expander('Lead Airline Security Supervisor'):
 - Reduced overtime costs by 20% through efficient scheduling and resource allocation; oversaw security screening procedures, ensuring compliance with TSA and FAA regulations
 - Responded to incidents and escalated conflicts, ensuring a safe airport environment; led audits and inspections to assess and maintain security protocol effectiveness
 - Provided on-the-job training and mentorship to new hires and team leads; facilitated communication between airport stakeholders to resolve operational issues
-- Improved reporting accuracy by implementing a digital tracking system for incidents and patrol logs; assisted in the coordination of emergency response drills and real-world incidents
-
 ''')
 
 st.markdown('''## Education | Certifications:''')
