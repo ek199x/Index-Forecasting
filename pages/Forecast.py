@@ -215,8 +215,8 @@ if st.session_state.forecasting == True:
       forecast_df,pred_price = main_forecast(df, main, xscaler, yscaler, xscale)
       #forecast_df,pred_price = forecast_func(df, selected_scenario, xscaler, yscaler, xscale)r
 
-    initial_price = forecast_df['Close_Pred'].iloc[0]
-    last_price = forecast_df['Close_Pred'].iloc[-1]
+    initial_price = round(forecast_df['Close_Pred'].iloc[0],2)
+    last_price = round(forecast_df['Close_Pred'].iloc[-1],2)
     years = len(forecast_df)/365
     CAGR = round(((last_price / initial_price) **(1 / years) - 1 )*100)
     st.write(f'Your inital Price was {initial_price}, the last price was {last_price} that gives you a Compound Annual Growth Rate of {CAGR}%')
