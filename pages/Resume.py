@@ -14,13 +14,14 @@ st.markdown('''
 ## Professional Experience:
 #### United States Air Force | Various Locations | 2020 – Present
 ''')
-with st.expander('Database Developer'):
+with st.expander('Data Integration & Intelligence Manager - Human Resources Section'):
     st.markdown('''
-- Designed and optimized complex SQL queries, stored procedures, and triggers to support critical data operations; automated repetitive workflows using Power Automate, improving processing speed and accuracy
-- Integrated database solutions with automated reporting tools to streamline decision-making; built and maintained dashboards and data visualizations using Excel and Power BI for leadership briefings
-- Analyzed business processes to identify automation opportunities and reduce manual input; collaborated with cross-functional teams to align data systems with organizational goals
-- Conducted regular data audits to ensure consistency and compliance with Air Force data standards; improved data transfer processes, decreasing turnaround times by 40
-- Provided technical support and training on new data tools to end-users; documented development protocols to ensure maintainability and knowledge transfer
+- Integrated database solutions such as MS Access with automated tools in the MS Power suite as a pipeline for data used in executive level decision-making involving a team of 500+ reflected in 5 unique dashboards and over 20 dynamic data visualizations reporting on HR, financial, & operational data
+- Created a streamlined employee onboarding process by designing and optimizing over 15 complex SQL queries, storing procedures and triggers to support critical data operations; automated over 20 repetitive workflows using Power Automate, improving processing speed by 80% 
+- Innovated company policy by seeking process engineering opportunities resulting in reducing over 400 hours of manual input by collaborating with cross-functional teams to align data systems and automation products with organizational goals of HR
+- Conducted internal data audits spanning over 4,000 records to ensure consistency and compliance with Air Force data standards resulting in a 100% pass rate on official Air Force audits 
+- Taught critical database principles and fundamentals to HR team for use of new data tools for continuity operations resulting in documented development protocols to ensure maintainability and knowledge transfer
+
                 ''')
 
 
