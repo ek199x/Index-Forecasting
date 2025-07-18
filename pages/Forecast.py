@@ -22,7 +22,8 @@ st.set_page_config(initial_sidebar_state="expanded")
 st.title('Stock Forecasting Project - Eduard Klyuchinskiy')
 
 st.sidebar.title('Choose Your Fund')
-funds = st.sidebar.selectbox('fund',['S&P 500', 'DOW JONES', 'NASDAQ'])
+#funds = st.sidebar.selectbox('fund',['S&P 500', 'DOW JONES', 'NASDAQ'])
+funds = st.sidebar.selectbox(['S&P 500', 'DOW JONES', 'NASDAQ'])
 
 submit = False
 
