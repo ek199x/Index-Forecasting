@@ -142,7 +142,7 @@ def forecast(df, model, xscaler, yscaler,xscale):
         new_vals_df = pd.DataFrame([new_row], columns=forecast_features)
         new_scaled = xscaler.transform(new_vals_df)
 
-        if len(pred_price) > 1 and i % 5 == 0:  # update every 5 steps for smoother visuals
+        if len(pred_price) > 1 and i % 50 == 0:  # update every 5 steps for smoother visuals
             forecast_df = pd.DataFrame({
                 'Date': future_dates,
                 'Log_Close_Pred': pred_log,
