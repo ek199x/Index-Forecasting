@@ -25,13 +25,14 @@ with st.expander('Data Integration & Intelligence Manager - Human Resources Sect
                 ''')
 
 
-with st.expander('SATCOM Gateway Supervisor'):
+with st.expander('Realtime Data Operations Manager - Satellite Communications Section'):
     st.markdown('''
-- Managed and maintained satellite communication systems, ensuring 99.9% system availability for global operations; supervised a team of 6 technicians in operating the most diverse satellite gateway in U.S. Air Forces Europe
-- Troubleshot, repaired, and inspected equipment, reducing communication failures by 30%; coordinated a $2M facility upgrade project, completing a power migration with no operational delays
-- Oversaw 99K maintenance actions, maintaining near-perfect uptime for a U.S. Navy missile defense mission; restored missile communication capabilities within 72 hours after a critical power outage affecting 31 allied nations
-- Authored automated tools for metrics tracking and reporting, improving situational awareness; eliminated a 4-year hazardous materials issue, saving $500K and ensuring site safety for 6K personnel
-- Delivered 130 configuration updates, cutting system recovery time by 1.5 hours; facilitated multilingual communications, enhancing coordination with allied forces during crisis response
+- Spearheaded real-time data tracking for a 25-member team supporting 24/7 operations by designing and maintaining a custom database linked to an operational dashboard to enhance supervisory awareness and decision-making for maintenance and operations of satellite equipment
+- Engineered automated data tools for metrics tracking and performance reporting, elevating awareness of equipment lifecycle stages within the work center increasing equipment turnover efficiency by 50% for over 1,000 distinct pieces of equipment
+- Coordinated a $2M facility upgrade involving a complex power migration from main power to secondary and tertiary power sources in order to replace vital components providing electricity to overall communications systems using previously documented power-flow diagrams within the operational database
+- Supervised personnel performing over 99K maintenance actions ensuring all activities accurately captured in maintenance database, resulting in communications support linked to missile defense operations for 31 allied nations
+- Maintained a 24/7 schedule for crew operations providing non-stop mission critical communication operations for over 100 global teams focusing on diverse sets of tasks such as special warfare operations, counter-terrorism, and missile defense, ensuring all shifts were above critical staffing threshold
+
 
                 ''')
    
