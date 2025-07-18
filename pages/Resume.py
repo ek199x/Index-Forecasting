@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import joblib
 
+st.set_page_config(initial_sidebar_state="expanded")
 st.set_page_config(page_title = 'Resume')
 st.image('Me.jpeg', width=400)
 
