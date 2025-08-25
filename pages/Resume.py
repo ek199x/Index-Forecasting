@@ -109,5 +109,5 @@ with st.expander('Specialized Military Training '):
                 - Airman Leadership School 
                 - Modernization of Enterprise Terminals Sustainment Course
                 ''')
-st.link_button('Download My Resume', 'https://docs.google.com/u/0/uc?id=1PKOTTOiJ_xMRQA1-oR_vK4tjLFKfNUjZVR9es7WgU3w&export=download')
+st.link_button('Download My Resume', 'https://drive.google.com/u/0/uc?id=1PKOTTOiJ_xMRQA1-oR_vK4tjLFKfNUjZVR9es7WgU3w&export=download')
     
